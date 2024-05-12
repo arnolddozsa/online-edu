@@ -7,8 +7,8 @@ A frontendet az alábbiak szerint
     npm i
 
 ### Adabázis MongoDb 
-lokálszerveren készítettem el és az adatbázis neve onlineedu
-a db mappa alatt találhatók a kollekciók json formában kiexportálva
+Lokál szerveren készítettem el és az adatbázis neve onlineedu
+A db mappa alatt találhatók a kollekciók json formában kiexportálva
 
 ## Build
 
