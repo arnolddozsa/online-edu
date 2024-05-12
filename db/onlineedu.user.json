@@ -1,0 +1,45 @@
+[{
+  "_id": {
+    "$oid": "663c9bda44698e37fbf48350"
+  },
+  "email": "asd",
+  "name": "",
+  "password_hash": "$2b$10$7yMWCYVjbpjYTMiWbZj7Ou07QI1W.ix59bQ71usFCKcC/kum7MnQ2",
+  "createDate": {
+    "$date": "2024-05-09T09:48:10.736Z"
+  },
+  "isTeacher": true
+},
+{
+  "_id": {
+    "$oid": "663dd26feff37bade43b792c"
+  },
+  "email": "b",
+  "password_hash": "$2b$10$gc5W.s4rEAEd7zy1/v0zwecHFvxm04BZ4tVmfcKZIxwOZSIkJuaQq",
+  "createDate": {
+    "$date": "2024-05-10T07:53:19.909Z"
+  },
+  "isTeacher": false
+},
+{
+  "_id": {
+    "$oid": "663dd45ceff37bade43b792d"
+  },
+  "email": "c",
+  "password_hash": "$2b$10$kVZ.Mi3m6ZON49jtaSp1G.WZt7bLkCajEAbPq8wa89Z0.MXA5erJu",
+  "createDate": {
+    "$date": "2024-05-10T08:01:32.232Z"
+  },
+  "isTeacher": false
+},
+{
+  "_id": {
+    "$oid": "664120b351a3909164a986cc"
+  },
+  "email": "c@c.com",
+  "password_hash": "$2b$10$9ZJ6oIJvSf3a7H48GPLIlOOPoG..3RhUF.Z/UDL7NtuNyuxKSBQ1a",
+  "createDate": {
+    "$date": "2024-05-12T20:04:03.461Z"
+  },
+  "isTeacher": false
+}]

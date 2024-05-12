@@ -1,0 +1,34 @@
+<div class="uk-card-default uk-margin-small uk-padding">
+    <form class="uk-form-stacked" (ngSubmit)="register()">
+      <fieldset class="uk-fieldset">
+  
+        <legend class="uk-legend">Registration</legend>
+  
+        <div class="uk-margin">
+          <label class="uk-form-label" for="email">Email</label>
+          <div class="uk-form-controls">
+            <input class="uk-input" id="email" type="email" name="email" [(ngModel)]="formData.email" required>
+          </div>
+        </div>
+  
+        <div class="uk-margin">
+          <label class="uk-form-label" for="password">Password</label>
+          <div class="uk-form-controls">
+            <input class="uk-input" id="password" type="password" name="password" [(ngModel)]="formData.password" required>
+          </div>
+        </div>
+  
+        <div class="uk-margin">
+          <label class="uk-form-label" for="isTeacher">Are you a teacher?</label>
+          <div class="uk-form-controls">
+            <input class="uk-checkbox" id="isTeacher" type="checkbox" name="isTeacher" [(ngModel)]="formData.isTeacher">
+          </div>
+        </div>
+  
+        <div class="uk-margin">
+          <button class="uk-button uk-button-primary" type="submit">Register</button>
+        </div>
+        <div>{{error}}</div>
+      </fieldset>
+    </form>
+  </div>

@@ -1,0 +1,29 @@
+
+
+<h1 class="uk-text-center">
+    <div>Teszt kvíz</div>
+    <div>
+    {{course?.name}}
+        </div>  
+</h1>
+<div [innerHtml]="quizItem?.question" class="content">
+    
+</div>
+<ul class="uk-list uk-list-striped">
+        
+    <li *ngFor="let item of quizItem?.answers; let i = index">
+        <input class="uk-radio" id="{{course?.code}}answer{{i}}" (change)="answer(i)" [checked]="(subscription?.answers?.[page-1] ?? -1) == i" name="answer" type="radio" value={{i}} />
+        <label for="{{course?.code}}answer{{i}}">{{item}}</label>
+    </li>
+    
+</ul> 
+<div class="uk-flex">
+    <div class="uk-flex-1">
+        <button [disabled]="page==1"   class="uk-button uk-button-primary" (click)="prev();" >Előző</button>
+    </div>
+    <div class="uk-flex-1 uk-text-right">
+        <button [disabled]="page==itemCount"  class="uk-button uk-button-primary"  (click)="next();">Következő</button>
+        <button *ngIf="page==itemCount" class="uk-button uk-button-primary"  (click)="finishCourse();">Befejezés</button>
+    </div>
+
+</div>

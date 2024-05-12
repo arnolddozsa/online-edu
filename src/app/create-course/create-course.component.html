@@ -1,0 +1,62 @@
+<div class="uk-flex uk-flex-middle uk-height-viewport uk-flex-middle uk-flex-center">
+
+    <div class="uk-card-default uk-margin-small uk-padding">
+      <form class="uk-form-stacked" (ngSubmit)="CreateCourse()">
+        <fieldset class="uk-fieldset">
+  
+          <legend class="uk-legend">Kurzus létrehozása</legend>
+  
+          <div class="uk-margin">
+            <label class="uk-form-label" for="name">Név</label>
+            <div class="uk-form-controls">
+              <input class="uk-input" id="name" type="text" name="name" [(ngModel)]="course.name" required>
+            </div>
+          </div>
+          <div class="uk-margin">
+            <label class="uk-form-label" for="description">Leírás</label>
+            <div class="uk-form-controls">
+              <input class="uk-input" id="description" type="text" name="description" [(ngModel)]="course.description" >
+            </div>
+          </div>
+  
+          
+          <div>
+            Oktatási elemek / oldalak
+          </div>
+          <ul>
+              
+              <div *ngFor="let item of course.items">
+                  <app-course-item [item]="item"></app-course-item>
+                </div>
+          </ul>
+          <div class="uk-flex uk-flex-right">
+
+              <button type="button" class="uk-button uk-button-primary" (click)="AddItem();">Hozzáadás</button>
+          </div>
+
+          
+          <div>
+            Quiz elemek
+            <p>Quiz elem hozzáadása, ha a kurzus teljesítés megköveteli</p>
+          </div>
+          <ul>
+              
+              <div *ngFor="let item of course.quizItems; let i = index;">
+                  <app-quiz-item [item]="item" [qIndex]="i"></app-quiz-item>
+                </div>
+          </ul>
+          <div class="uk-flex uk-flex-right">
+
+              <button type="button" class="uk-button uk-button-primary" (click)="AddQuizItem();">Kérdés hozzáadása</button>
+          </div>
+
+          <div class="uk-margin">
+            <button class="uk-button uk-button-primary" type="submit">{{ course.code.length > 0 ? "Módosítás" : "Létrehozás"}}</button>
+          </div>
+
+        </fieldset>
+      </form>
+      <div>{{error}}</div>
+    </div>
+  
+  </div>

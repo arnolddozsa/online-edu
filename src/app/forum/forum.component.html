@@ -1,0 +1,18 @@
+<p>{{course?.code}} - {{course?.name}} fórum</p>
+<div class="uk-list-striped">
+
+    <div *ngFor="let item of forum; let i = index" class="forum-item">
+        <div>
+            <div class="uk-flex uk-flex-between uk-text-small">
+                {{item.createUserId}}
+                
+                <div>{{item.createDate.toString().split('T').join(' ').replace('Z', '')}}</div>
+            </div>
+            <div [innerHtml]="item.message"></div>
+        </div>
+    </div>
+</div>
+<div class="uk-flex">
+    <textarea class="uk-textarea" [(ngModel)]="message" placeholder="Fórum üzenet"></textarea>
+    <button class="uk-button uk-button-primary" (click)="sendMessage();">Küldés</button>
+</div>

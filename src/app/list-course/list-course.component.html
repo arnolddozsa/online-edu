@@ -1,0 +1,8 @@
+<h1>Elérhető kurzuslista</h1>
+ 
+<ul class="uk-list uk-list-striped">
+        
+    <li *ngFor="let item of courses">
+        <app-course-list-item (remove)="refresh($event)" [course]="item"></app-course-list-item>
+    </li>
+</ul>

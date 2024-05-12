@@ -1,0 +1,30 @@
+<li class="uk-flex">
+    <span class="uk-flex-1">
+        <div>
+            {{course.name}}
+        </div>
+        <div style="font-size: 0.7rem;">
+            {{course.description}}
+        </div>
+        <div style="font-size: 0.7rem;">
+            Oktatási anyagok oldalszáma: {{course.items.length}}
+        </div>
+        <div style="font-size: 0.7rem;">
+            Vizsga: 
+            <span *ngIf="course.quizItems.length > 0" class=""><span>Kérdéssor</span></span>
+            <span *ngIf="course.quizItems.length == 0" class=""><span>Nincs</span></span>
+        </div>
+
+        <div *ngIf="!user.isTeacher" >
+            <progress class="uk-progress" value="{{(progress)}}" max="100">{{progress}}</progress>
+            <div><span>Eredmény: </span>{{subscription?.grade || 0 > 0 ? subscription?.grade : "Még nincs eredmény"}}</div>
+        </div>
+
+    </span>
+
+    <span *ngIf="user.isTeacher" class=""><button (click)="edit();" class="uk-button uk-button-primary">Szerkesztés</button></span>
+    <span *ngIf="user.isTeacher" class=""><button (click)="onDelete();" class="uk-button uk-button-danger">Törlés</button></span>
+    <span *ngIf="!user.isTeacher && subscription == undefined" class=""><button (click)="subscribe();" class="uk-button uk-button-primary">Felíratkozás</button></span>
+    <span *ngIf="!user.isTeacher && subscription !== undefined && subscription.isFinished == false" class=""><button (click)="read();" class="uk-button uk-button-primary">Folytatás</button></span>
+    <span class=""><button (click)="forum();" class="uk-button uk-button-primary">Fórum</button></span>
+</li>

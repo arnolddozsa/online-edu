@@ -1,0 +1,19 @@
+<label for="">Kérdés leírás, tartalom </label>
+<textarea class="uk-textarea" [(ngModel)]="item.question"></textarea>
+<ul class="uk-list uk-list-striped">
+    
+    <li *ngFor="let answer of item.answers; let i = index" class="uk-flex uk-flex-middle">
+        <div class="uk-badge">
+            {{i+1}}
+        </div>
+        <div class="uk-width-1-3">
+            <input id="correctAnswer_{{i}}_{{qIndex}}" class="uk-radio" type="radio" name="correctAnswer[{{qIndex}}]" [checked]="item.correctAnswer == i" (change)="markCorrect(i, $event)"/>
+            <label for="correctAnswer_{{i}}_{{qIndex}}">Helyes</label>
+        </div>
+        <input class="uk-input" type="text" [ngModel]="item.answers[i]" (change)="updateItem(i, $event)"/>
+        <button type="button" class="uk-button uk-button-primary" (click)="deleteAnswer(i);">Törlés</button>
+    </li>
+</ul>
+<button type="button" class="uk-button uk-button-primary" (click)="addAnswer();">Válaszlehetőség hozzáadása</button>
+
+

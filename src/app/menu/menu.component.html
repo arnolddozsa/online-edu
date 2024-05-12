@@ -1,0 +1,42 @@
+<div class="top uk-position-sticky uk-flex uk-flex-middle">
+    
+    <button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-overlay">Menu</button>
+    <div class="uk-flex-1"></div>
+    <div class="uk-text-right">
+        <div>Bejelentkezve: 
+            {{getUser().email}}
+        </div>
+        <div>
+            
+        </div>
+    </div>
+
+</div>
+
+<div id="offcanvas-overlay" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+        <ul class="uk-nav uk-nav-default">
+            <li class="uk-active"><a href="#"></a></li>
+            <li class="uk-parent">
+                <a href="" (click)="$event.preventDefault()">Kurzus</a>
+                <ul class="uk-nav-sub">
+                    <li><a *ngIf="getUser().isTeacher" href="course/create">Létrehozás</a></li>
+                    <li><a href="/course/list">Lista</a></li>
+                </ul>
+            </li>
+            <!-- <li class="uk-nav-header">Header</li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Item</a></li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Item</a></li>
+            <li class="uk-nav-divider"></li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Item</a></li> -->
+        </ul>
+        <hr class="uk-divider-icon">
+        <div class="uk-text-center">
+
+            <a class="uk-button uk-button-default" (click)="logout($event)" href="#">Kijelentkezés</a>
+        </div>
+
+    </div>
+</div>

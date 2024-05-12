@@ -1,0 +1,10 @@
+<h1 class="uk-text-center">OnlineEdu</h1>
+<h1 class="uk-text-center">Elérhető kurzusaink</h1>
+<ul class="uk-grid uk-child-with-1-4">
+    <div *ngFor="let item of courses" class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
+        <h3 class="uk-card-title"><a href="/course/preview/{{item.code}}">{{item.name}}</a></h3>
+        <p [innerHtml]="item.description"></p>
+        <a class="uk-button uk-button-primary" *ngIf="user._id.length == 0" href="/login">Érdekel</a>
+        <a class="uk-button uk-button-primary" *ngIf="user._id.length > 0 && !user.isTeacher" href="/course/list">Felíratkozás</a>
+    </div>
+</ul>
