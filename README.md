@@ -17,4 +17,10 @@ a db mappa alatt találhatók a kollekciók json formában kiexportálva
 ## Run
 
     ng serve
+## Bejelentkezés 
+Tanár: asd jelszó: asd
+Diák: b jelszó: b
 
+## Video
+
+https://drive.google.com/file/d/109j0wzkExRibzgFEGUZKy9WmngnvgWx1/view?usp=sharing
