@@ -4,9 +4,9 @@
   "scripts": {
     "dev": "NODE_OPTIONS=--openssl-legacy-provider node app.js",
     "build": "next build",
-    "start": "NODE_ENV=production node app.js"
+    "startw": "node app.js"
     ,"buildw": "SET NODE_OPTIONS=--openssl-legacy-provider & next build"
-    ,"startw": "SET NODE_OPTIONS=--openssl-legacy-provider & SET NODE_ENV=production & node app.js"
+    ,"start": "SET NODE_OPTIONS=--openssl-legacy-provider & SET NODE_ENV=production & node app.js"
   },
   "dependencies": {
     "async": "^3.2.4",

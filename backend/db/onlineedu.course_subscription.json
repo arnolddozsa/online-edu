@@ -1,0 +1,120 @@
+[{
+  "_id": {
+    "$oid": "663e24ab80cd9c8b114f55e9"
+  },
+  "courseId": {
+    "$oid": "663e1d1880cd9c8b114f55e7"
+  },
+  "createUserId": {
+    "$oid": "663dd26feff37bade43b792c"
+  },
+  "progress": 2,
+  "answers": [
+    0,
+    0
+  ],
+  "grade": 5,
+  "isFinished": true,
+  "percentage": 100
+},
+{
+  "_id": {
+    "$oid": "663f84369159a4e1c726983c"
+  },
+  "courseId": {
+    "$oid": "663f7fa79159a4e1c7269838"
+  },
+  "createUserId": {
+    "$oid": "663dd26feff37bade43b792c"
+  },
+  "progress": 4,
+  "isFinished": true,
+  "grade": 5,
+  "answers": [
+    1
+  ],
+  "percentage": 100
+},
+{
+  "_id": {
+    "$oid": "6641207c51a3909164a986cb"
+  },
+  "courseId": {
+    "$oid": "6641201351a3909164a986c9"
+  },
+  "createUserId": {
+    "$oid": "663dd26feff37bade43b792c"
+  },
+  "progress": 2,
+  "isFinished": true,
+  "grade": 1,
+  "answers": [
+    1
+  ],
+  "percentage": 0
+},
+{
+  "_id": {
+    "$oid": "664120be51a3909164a986cd"
+  },
+  "courseId": {
+    "$oid": "6641201351a3909164a986c9"
+  },
+  "createUserId": {
+    "$oid": "664120b351a3909164a986cc"
+  },
+  "progress": 2,
+  "isFinished": true,
+  "grade": 5,
+  "answers": [
+    0
+  ],
+  "percentage": 100
+},
+{
+  "_id": {
+    "$oid": "664120ed51a3909164a986cf"
+  },
+  "courseId": {
+    "$oid": "663f7fa79159a4e1c7269838"
+  },
+  "createUserId": {
+    "$oid": "664120b351a3909164a986cc"
+  },
+  "progress": 0,
+  "isFinished": false,
+  "grade": 0
+},
+{
+  "_id": {
+    "$oid": "664120f251a3909164a986d0"
+  },
+  "courseId": {
+    "$oid": "663e1d1880cd9c8b114f55e7"
+  },
+  "createUserId": {
+    "$oid": "664120b351a3909164a986cc"
+  },
+  "progress": 0,
+  "isFinished": false,
+  "grade": 0
+},
+{
+  "_id": {
+    "$oid": "6751d47cd9375c47d7b6fb6e"
+  },
+  "courseId": {
+    "$oid": "663e1d1880cd9c8b114f55e7"
+  },
+  "createUserId": {
+    "$oid": "6751d468d9375c47d7b6fb6d"
+  },
+  "progress": 2,
+  "isFinished": true,
+  "grade": 5,
+  "answers": [
+    1,
+    1
+  ],
+  "percentage": 100
+}]

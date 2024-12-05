@@ -1,0 +1,114 @@
+[{
+  "_id": {
+    "$oid": "663e1d1880cd9c8b114f55e7"
+  },
+  "code": "OmIm20GSvztteDYg",
+  "name": "Teszt kurzus",
+  "description": "In this course yo will learn how to create course",
+  "items": [
+    {
+      "_id": "",
+      "content": "<h2>This is the first element of our lecture</h2>\n<p>Some kindda thing to learn</p>"
+    },
+    {
+      "_id": "",
+      "content": "<h2>This is the 2nd element of our lecture</h2>\n<p>Some kindda thing to learn</p>"
+    }
+  ],
+  "quizItems": [
+    {
+      "_id": "",
+      "question": "What?",
+      "answers": [
+        "abasdf",
+        "c"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "_id": "",
+      "question": "Another question?",
+      "answers": [
+        "a",
+        "b",
+        "e"
+      ],
+      "correctAnswer": 1
+    }
+  ],
+  "createUserId": {
+    "$oid": "663c9bda44698e37fbf48350"
+  }
+},
+{
+  "_id": {
+    "$oid": "663f7fa79159a4e1c7269838"
+  },
+  "code": "MBruhrTQMIUMMWQ5",
+  "name": "Teszt kurzus2",
+  "description": "This is another course you should try",
+  "items": [
+    {
+      "_id": "",
+      "content": "This is another course you should try page 1"
+    },
+    {
+      "_id": "",
+      "content": "This is another course you should try page 2"
+    },
+    {
+      "_id": "",
+      "content": "This is another course you should try page 3"
+    },
+    {
+      "_id": "",
+      "content": "This is another course you should try page 4"
+    }
+  ],
+  "quizItems": [
+    {
+      "_id": "",
+      "question": "Sikerült",
+      "answers": [
+        "Igen",
+        "Nem"
+      ],
+      "correctAnswer": 1
+    }
+  ],
+  "createUserId": {
+    "$oid": "663c9bda44698e37fbf48350"
+  }
+},
+{
+  "_id": {
+    "$oid": "6641201351a3909164a986c9"
+  },
+  "code": "Zm1HC7LOvkmIm4YM",
+  "name": "Teszt kurzus3",
+  "description": "Ez egy új kurzus amit el lehet sajátítani",
+  "items": [
+    {
+      "_id": "",
+      "content": "Ez egy tartalom lehet benne html is\n<h1>Teszt cím</h1>"
+    },
+    {
+      "_id": "",
+      "content": "<p>szöveges tartalom 2. oldal</p>"
+    }
+  ],
+  "quizItems": [
+    {
+      "_id": "",
+      "question": "Sikerült?",
+      "answers": [
+        "Igen",
+        "Nem"
+      ],
+      "correctAnswer": 0
+    }
+  ],
+  "createUserId": {
+    "$oid": "663c9bda44698e37fbf48350"
+  }
+}]
