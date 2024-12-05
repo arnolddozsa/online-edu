@@ -6,7 +6,7 @@
     "build": "next build",
     "startw": "node app.js"
     ,"buildw": "SET NODE_OPTIONS=--openssl-legacy-provider & next build"
-    ,"start": "EXPORT NODE_OPTIONS=--openssl-legacy-provider && node app.js"
+    ,"start": "node app.js"
   },
   "dependencies": {
     "async": "^3.2.4",
