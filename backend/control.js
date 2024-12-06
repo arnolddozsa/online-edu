@@ -67,7 +67,6 @@ class Controller  {
 
         //send the access token to the client inside a cookie
         res.cookie("jwt", "", {
-            secure: true
             //, httpOnly: true
         })
 
