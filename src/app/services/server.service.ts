@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { User } from '../model/User';
 import { Course } from '../model/Course';
 import { Course_Subscription } from '../model/Course_Subscription';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -11,6 +12,7 @@ import { Course_Subscription } from '../model/Course_Subscription';
 export class ServerService {
 
   user: User = new User();
+  baseURL: string = environment.apiBaseURL; // API alapcíme az environment-ből
   
   constructor() { 
     
@@ -23,7 +25,7 @@ export class ServerService {
   }
   async fetchWrapper(endpoint: string, data: any = undefined, method: string = "POST"){
     console.log(JSON.stringify(data));
-    var res = await fetch(`http://localhost:3000/${endpoint}`, {
+    var res = await fetch(`${this.baseURL}/${endpoint}`, {
       method: method
       , headers: {
         "Content-Type": "application/json"
