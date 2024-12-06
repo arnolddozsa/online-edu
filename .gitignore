@@ -40,6 +40,7 @@ build/Release
 
 # Dependency directories
 node_modules/
+backend/node_modules/
 jspm_packages/
 
 # Snowpack dependency directory (https://snowpack.dev/)
@@ -86,6 +87,9 @@ web_modules/
 # Next.js build output
 .next
 out
+
+# Next.js build output
+.angular/
 
 # Nuxt.js build / generate output
 .nuxt

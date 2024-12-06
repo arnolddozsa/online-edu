@@ -15,4 +15,8 @@
   "include": [
     "src/**/*.d.ts"
   ]
+  ,"exclude": [
+    "backend"
+    ,"node_modules"
+  ]
 }
